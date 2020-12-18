@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Miniskr.Libraries.Cache.Redis\Miniskr.Libraries.Cache.Redis.csproj" />
+    <ProjectReference Include="..\Miniskr.Libraries.Cors\Miniskr.Libraries.Cors.csproj" />
   </ItemGroup>
 
 </Project>

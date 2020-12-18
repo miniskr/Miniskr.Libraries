@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Cors.Infrastructure;
-using System;
 using System.Collections.Generic;
 
 namespace Miniskr.Libraries.Cors
