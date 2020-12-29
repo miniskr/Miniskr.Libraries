@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miniskr.Libraries", "Minisk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miniskr.Libraries.Cache.Redis", "Miniskr.Libraries.Cache.Redis\Miniskr.Libraries.Cache.Redis.csproj", "{3C22666B-D48A-4BC7-85C2-3EFFA7AD935F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miniskr.Libraries.Cors", "Miniskr.Libraries.Cors\Miniskr.Libraries.Cors.csproj", "{89284A9E-C8FE-4ED8-A3AF-743FC5ED25A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miniskr.Libraries.Cors", "Miniskr.Libraries.Cors\Miniskr.Libraries.Cors.csproj", "{89284A9E-C8FE-4ED8-A3AF-743FC5ED25A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{A24CDDC6-2A00-43A7-84DA-91DF3ED80993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miniskr.Libraries.DB.Mysql", "Miniskr.Libraries.DB.Mysql\Miniskr.Libraries.DB.Mysql.csproj", "{981B6CE2-1393-4082-AF00-A2EE000294A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miniskr.Libraries.DB.Mysql.Test", "Miniskr.Libraries.DB.Mysql.Test\Miniskr.Libraries.DB.Mysql.Test.csproj", "{999CA46F-D74B-45A2-B845-6CB540C417B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +33,21 @@ Global
 		{89284A9E-C8FE-4ED8-A3AF-743FC5ED25A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89284A9E-C8FE-4ED8-A3AF-743FC5ED25A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89284A9E-C8FE-4ED8-A3AF-743FC5ED25A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981B6CE2-1393-4082-AF00-A2EE000294A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981B6CE2-1393-4082-AF00-A2EE000294A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981B6CE2-1393-4082-AF00-A2EE000294A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981B6CE2-1393-4082-AF00-A2EE000294A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999CA46F-D74B-45A2-B845-6CB540C417B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999CA46F-D74B-45A2-B845-6CB540C417B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999CA46F-D74B-45A2-B845-6CB540C417B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999CA46F-D74B-45A2-B845-6CB540C417B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{981B6CE2-1393-4082-AF00-A2EE000294A6} = {A24CDDC6-2A00-43A7-84DA-91DF3ED80993}
+		{999CA46F-D74B-45A2-B845-6CB540C417B7} = {A24CDDC6-2A00-43A7-84DA-91DF3ED80993}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65B5179E-7E37-4D56-A32F-ADD4EF772E97}
