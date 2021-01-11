@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 using MicroOrm.Dapper.Repositories;
-using MicroOrm.Dapper.Repositories.SqlGenerator;
 
 namespace Miniskr.Libraries.DB.Mysql
 {
@@ -34,16 +31,6 @@ namespace Miniskr.Libraries.DB.Mysql
             :this(transaction.GetConnection())
         {
         }
-
-
-        //public void Dispose()
-        //{
-        //    if(this._connection != null)
-        //    {
-        //        this._connection.Dispose();
-        //        this._connection = null;
-        //    }
-        //}
 
         public TModel FindOrInsert(Expression<Func<TModel, bool>> predicate, TModel model)
         {

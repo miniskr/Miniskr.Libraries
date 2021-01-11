@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="MicroOrm.Dapper.Repositories" Version="1.15.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Miniskr.Libraries.DB.Mysql\Miniskr.Libraries.DB.Mysql.csproj" />
   </ItemGroup>
 
 </Project>
