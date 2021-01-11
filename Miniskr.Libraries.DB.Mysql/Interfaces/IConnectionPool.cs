@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Data;
 
-namespace Miniskr.Libraries.DB.Mysql.Interfaces
+namespace Miniskr.Libraries.DB.Mysql
 {
     public interface IConnectionPool : IDisposable
     {
+        IPoolConnection BeginConnect();
         IDbConnection Rent();
         void Return(IDbConnection connection);
-        IPoolConnection BeginConnect();
     }
 }

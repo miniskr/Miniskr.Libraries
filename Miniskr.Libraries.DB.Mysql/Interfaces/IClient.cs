@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Miniskr.Libraries.DB.Mysql.Interfaces
+namespace Miniskr.Libraries.DB.Mysql
 {
     public interface IClient : IDisposable
     {

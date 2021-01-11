@@ -4,6 +4,8 @@ namespace Miniskr.Libraries.DB.Mysql.Configuration
 {
     public class DBDatabaseOptions
     {
+        public bool Default { get; set; }
+
         public string Host { get; set; } = "localhost";
         public uint Port { get; set; } = 3306;
         public string Database { get; set; }

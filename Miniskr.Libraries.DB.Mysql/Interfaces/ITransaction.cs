@@ -2,7 +2,7 @@
 using System.Data;
 using System.Threading.Tasks;
 
-namespace Miniskr.Libraries.DB.Mysql.Interfaces
+namespace Miniskr.Libraries.DB.Mysql
 {
     public interface ITransaction : IDisposable
     {

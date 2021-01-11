@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Miniskr.Libraries.DB.Mysql.Interfaces
+namespace Miniskr.Libraries.DB.Mysql
 {
     public interface IDatabase : IDisposable
     {
@@ -9,7 +9,7 @@ namespace Miniskr.Libraries.DB.Mysql.Interfaces
         IRepository<TModel> GetRepository<TModel>()
             where TModel : class;
 
-        IPoolConnection GetConnection();
+        IPoolConnection BeginConnection();
 
         void Transaction(Action<ITransaction> action);
         Task Transaction(Func<ITransaction, Task> action);

@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MicroOrm.Dapper.Repositories;
 
-namespace Miniskr.Libraries.DB.Mysql.Interfaces
+namespace Miniskr.Libraries.DB.Mysql
 {
     public interface IRepository<TModel> : IDapperRepository<TModel>, IDisposable
         where TModel : class
