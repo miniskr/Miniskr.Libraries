@@ -23,7 +23,7 @@ namespace Miniskr.Libraries.DB.Mysql
             if (this._connectionString == null)
                 throw new InvalidOperationException($"connection string is null");
 
-
+            this.Extend();
         }
 
         private void Extend(int size = SIZE)
